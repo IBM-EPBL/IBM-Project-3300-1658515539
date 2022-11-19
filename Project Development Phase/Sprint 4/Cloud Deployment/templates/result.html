@@ -1,0 +1,56 @@
+
+
+<html>
+<head>
+<title>Early Detection of Chronic Kidney Disease using Machine Learning</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<style>
+*{font-family: 'Poppins', sans-serif;}
+</style>
+
+<body style="text-align: center;">
+    <div>
+        <h1 style="font-family: 'Poppins', sans-serif; background-color:black; color:white">Chronic Kidney Disease Detection</h1>
+    </div>
+    <br/>
+    <br/>
+
+    
+        
+        {% if y==0%}
+
+         <div >
+             <image src="{{url_for('static', filename='images/ckdisnotthere.jpg')}}" style="height:200px;width:300px;"/>
+            <h2 style="font-size:45px"><b>Medical Result</b></h2>
+              <blockquote style="font-size:35px;"><b>NORMAL</b></blockquote>
+              <blockquote style="font-size:35px;"><b>YOU ARE NOT HAVING CHRONIC KIDNEY DISEASE</b></blockquote>
+              <p></p>
+              
+         </div>
+        {%else%}
+        <div >
+              <image src="{{url_for('static', filename='images/ckdisthere.jpg')}}" style="height:200px;width:300px;"/>
+              <h2 style="font-size:45px"><b>Medical Result</b></h2>
+              <blockquote style="font-size:35px;"><b>ABNORMAL</b></blockquote>
+              <blockquote style="font-size:35px;"><b>YOU ARE DIAGNOSED WITH CHRONIC KIDNEY DISEASE</b></blockquote>
+              <p></p>
+
+         </div>
+        {% endif %}
+
+</body>
+</html>
+
+    
+          
+			   
+					
+                    
+               
+    
+       
+</body>
+</html>    
